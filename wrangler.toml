@@ -1,6 +1,6 @@
 name = "sigma-demo"
 type = "javascript"
-account_id = "f1e84ebed8564d989bffd46d5a988296"
+account_id = "70666c85ed2a6b44db6d67e3f2a4559c"
 workers_dev = true
 route = ""
 zone_id = ""

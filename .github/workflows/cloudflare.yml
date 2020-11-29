@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - cloudflare-deploy
   pull_request:
     branches:
       - main
+      - cloudflare-deploy
 
 jobs:
   deploy:
@@ -14,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        os: [ ubuntu-latest ]
-        node: [ 14 ]
+        os: [ubuntu-latest]
+        node: [14]
 
     steps:
       - uses: actions/setup-node@v1
