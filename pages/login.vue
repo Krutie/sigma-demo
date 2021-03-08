@@ -16,7 +16,7 @@ export default {
     login() {
       try {
         console.log('1 - Login form submit, dispatches login store action')
-        this.$axios.$post('http://localhost:3000/api/login', {
+        this.$axios.$post('/api/login', {
           email: this.email,
         }).then(response => {
           console.log('axios response', response)   
