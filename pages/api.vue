@@ -22,7 +22,7 @@ async function timer (promise) {
 }
 
 const ORIGINS = {
-  vercel: 'https://nitro-demo.vercel.app',
+  vercel: 'https://sigma-demo-ten.vercel.app',
   browser: 'https://nuxt.github.io/nitro-demo',
   netlify: 'https://nitro-demo.netlify.app',
   cloudflare: 'https://nitro-demo.netlify.app',
@@ -39,6 +39,7 @@ export default {
     const [directTime] = await timer($fetch(path))
 
     const url = origin + path
+    // const url = 
     const [urlTime] = await timer($fetch(url))
 
     return {

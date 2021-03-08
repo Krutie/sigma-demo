@@ -40,6 +40,7 @@ export default {
   nitro: {
     // minify: false
     preset: 'vercel',
+    // preset: process.env.NITRO_PRESET
     // analyze: true
   },
 
