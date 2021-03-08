@@ -11,9 +11,12 @@
       <a href="/api">
         API
       </a>
-      <!-- <a href="/graphql">
+      <a href="/login">
+        Login
+      </a>
+      <a href="/graphql">
         GraphQL
-      </a> -->
+      </a>
     </div>
     <a href="https://github.com/nuxt/nitro-demo" target="_blank" rel="noopener" class="gh-button">
       GitHub

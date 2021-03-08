@@ -1,6 +1,10 @@
 export default {
   target: 'static',
 
+  modules: [
+    '@nuxtjs/axios',
+  ],
+
   buildModules: [
     '@nuxt/nitro/compat'
     // '@nuxtjs/pwa'
@@ -15,8 +19,10 @@ export default {
   },
 
   serverMiddleware: [
-    { path: '/api/hello', handle: '~/server/hello' }
-    // { path: '/api/graphql', handle: '~/server/graphql' }
+    { path: '/api/hello', handle: '~/server/hello' },
+    // '~/api'
+    { path: '/api/login', handle: '~/server/login' },
+    { path: '/api/graphql', handle: '~/server/graphql' }
   ],
 
   generate: {
@@ -33,6 +39,7 @@ export default {
 
   nitro: {
     // minify: false
+    preset: 'vercel',
     // analyze: true
   },
 
